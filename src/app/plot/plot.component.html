@@ -1,0 +1,37 @@
+<div class="page-selector">
+  <span>Select page: </span>
+  <select (change)="onPageChange($event.target.value)">
+    <option [value]="pageId" *ngFor="let pageId of pageList">{{
+      pageId
+    }}</option>
+  </select>
+</div>
+<div class="metrics-container">
+  <div class="metric-block">
+    <h2>{{ activeUsers }}</h2>
+    <p>Active users in last 30 min</p>
+  </div>
+  <div class="metric-block">
+    <h2>{{ returningUsers }}</h2>
+    <p>Returning users rate within 1 day</p>
+  </div>
+</div>
+
+<div class="plot">
+  <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="pageViews"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [yAxisTickFormatting]="yAxisTickFormatting"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-vertical>
+</div>

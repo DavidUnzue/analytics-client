@@ -1,0 +1,10 @@
+<p>
+  Your are visiting the page with the ID: <strong>{{ pageId }}</strong>
+</p>
+<p>
+  This visit was added to the Pages Views in the Server with this Document
+  Structure:
+</p>
+<div *ngFor="let item of newPageView | keyvalue">
+  <b>{{ item.key }}:</b> {{ item.value }}
+</div>

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  apiRoot: 'http://localhost:7000',
+  apiToken: '123456789',
 };

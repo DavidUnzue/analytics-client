@@ -1,27 +1,34 @@
-# AnalyticsClient
+# Analytics Service Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
-## Development server
+## Configuration
+
+You can define the API host url and the API Token (needed for authorization) in the file `environments/environments.ts`.
+
+## Start dev server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Show analytics data
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can see all analytis metrics and data corresponding to page views in the dashboard under `http://localhost:4200/dashboard`.
 
-## Build
+## Generate new page views
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+You can generate new page views that get processed and stored by the API/server.
 
-## Running unit tests
+For doing that, I created 3 different predefined pages, which you can visit in the client under:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `http://localhost:4200/page-1`
+- `http://localhost:4200/page-2`
+- `http://localhost:4200/page-3`
 
-## Running end-to-end tests
+The server will retrieve the corresponding data (IP address, Browser, etc) from the request object sent by the client when you load one of those pages. Retrieving the Country of origin from the IP is buggy and defaults to Germany in case of failure.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you want to programmatically generate mocked page views, you can do so targeting the corresponding API endpoint directly. Read more on the `analytics-api` repository's README.
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+David Unzué  
+[davidunzue.com](davidunzue.com)

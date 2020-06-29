@@ -1,0 +1,19 @@
+.page-selector {
+  padding: 2em 0;
+}
+
+.metrics-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 1em;
+
+  .metric-block {
+    padding: 2em;
+    text-align: center;
+
+    h2 {
+      font-size: 180%;
+    }
+  }
+}
