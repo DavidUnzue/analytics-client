@@ -41,4 +41,4 @@ If you want to programmatically generate mocked page views, you can do so target
 ## Author
 
 David Unzué  
-[davidunzue.com](davidunzue.com)
+[davidunzue.com](https://davidunzue.com)
