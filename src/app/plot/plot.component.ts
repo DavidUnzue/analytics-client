@@ -12,8 +12,8 @@ export class PlotComponent implements OnInit {
   pageList: string[];
   pageViews: PageView[];
   selectedPageId: string;
-  activeUsers: number;
-  returningUsers: number;
+  activeUsers: number = 0;
+  returningUsers: number = 0;
 
   // plot options
   showXAxis = true;

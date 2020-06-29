@@ -2,17 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
-## Configuration
+## Setup and configuration
 
 You can define the API host url and the API Token (needed for authorization) in the file `environments/environments.ts`.
 
+### Install dependencies
+
+```bash
+$ npm install
+```
+
 ## Start dev server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ ng serve
+```
+
+Start a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Show analytics data
 
-You can see all analytis metrics and data corresponding to page views in the dashboard under `http://localhost:4200/dashboard`.
+You can see all analytics metrics and data corresponding to page views in the dashboard under `http://localhost:4200/dashboard`.
 
 ## Generate new page views
 
